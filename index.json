@@ -1,0 +1,22 @@
+{
+    "title": "Découverte de kubectl",
+    "description": "Mes premiers pas avec kubectl",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Premieres commandes",
+          "text": "step1.md"
+        },
+        {
+            "title": "Création d'une ressource",
+            "text": "step2.md"
+        }
+      ]
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
