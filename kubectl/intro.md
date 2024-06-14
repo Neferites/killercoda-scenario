@@ -2,3 +2,5 @@
 
 Outil en ligne de commande de kubernetes, kubectl permet d'exécuter des commandes dans les clusters Kubernetes. Vous pouvez utiliser kubectl pour déployer des applications, inspecter et gérer les ressources du cluster et consulter les logs.
 
+git config user.name neferites
+git config user.email laurent.alhossri@gmail.com
