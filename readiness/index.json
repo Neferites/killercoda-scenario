@@ -1,6 +1,6 @@
 {
-    "title": "Découverte des Pods",
-    "description": "Mes premiers pas avec un Pod",
+    "title": "Liveness/Readiness",
+    "description": "Pour un peu plus de disponibilité",
     "details": {
       "intro": {
         "text": "intro.md"
