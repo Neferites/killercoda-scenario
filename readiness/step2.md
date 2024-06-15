@@ -3,7 +3,7 @@ Les informations sur la readiness/liveness ne sont pas visibles de manière triv
 
 Après avoir fait un describe : 
 ```
-kubectl describe healthy-monolith
+kubectl describe pod healthy-monolith
 ```
 
 Comment est configurée la sonde readiness ?
@@ -16,7 +16,7 @@ Il est possible à l'aide d'un appel sur l'api du pod de forcer le passage à fa
 
 ```
 # Forward de l'api vers le terminal
-kubectl port-forward healthy-monolith 10081:81
+kubectl port-forward healthy-monolith 10081:81 &
 
 # Passage de la readiness à failed
 curl http://127.0.0.1:10081/readiness/status
