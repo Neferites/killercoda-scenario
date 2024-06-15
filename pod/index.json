@@ -19,12 +19,12 @@
           "title": "Intéractions avec le pod",
           "text": "step3.md"
         }
-      ]
-    },
-    "assets": {
-      "host01": [
-        {"file": "monolith.yaml", "target": "/root", "chmod": "+w"}
-      ]
+      ],
+      "assets": {
+        "host01": [
+          {"file": "monolith.yaml", "target": "/root", "chmod": "+w"}
+        ]
+      }
     },
     "backend": {
       "imageid": "kubernetes-kubeadm-1node"
