@@ -1,0 +1,32 @@
+{
+    "title": "Découverte des Pods",
+    "description": "Mes premiers pas avec un Pod",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Créer le pod",
+          "text": "step1/step1.md",
+          "verify": "step1/verify.sh"
+        },
+        {
+            "title": "Readiness / Liveness",
+            "text": "step2.md"
+        },
+        {
+          "title": "Intéractions avec le pod",
+          "text": "step3.md"
+        }
+      ],
+      "assets": {
+        "host01": [
+          {"file": "healthy-monolith.yaml", "target": "/root", "chmod": "+w"}
+        ]
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }

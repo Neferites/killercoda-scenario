@@ -3,7 +3,7 @@
 
 ## 1/ Explorer le fichier `monilith.yaml`
 ```
-# Affichier le contenu du fichier
+# Afficher le contenu du fichier
 cat monolith.yaml
 
 # Quelle image est lancée dans le pod ?
