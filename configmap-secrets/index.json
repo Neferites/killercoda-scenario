@@ -1,0 +1,29 @@
+{
+    "title": "Secrets / Configmap",
+    "description": "Configuration des ressources",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Créer une configmap",
+          "text": "step1/step1.md",
+          "verify": "step1/verify.sh"
+        },
+        {
+            "title": "Créer un secret",
+            "text": "step2.md"
+        }
+      ],
+      "assets": {
+        "host01": [
+          {"file": "proxy.conf", "target": "/root/configuration/nginx", "chmod": "+w"},
+          {"file": "tls/*.*", "target": "/root/configuration/tls", "chmod": "+w"}
+        ]
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
