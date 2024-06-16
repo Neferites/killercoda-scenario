@@ -20,7 +20,7 @@
       "assets": {
         "host01": [
           {"file": "proxy.conf", "target": "/root/configuration/nginx", "chmod": "+w"},
-          {"file": "tls/*.*", "target": "/root/configuration/tls", "chmod": "+w"}
+          {"file": "tls/*.*", "target": "/root/configuration", "chmod": "+w"}
         ]
       }
     },
