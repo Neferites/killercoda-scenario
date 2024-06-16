@@ -20,7 +20,9 @@
       "assets": {
         "host01": [
           {"file": "proxy.conf", "target": "/root/configuration/nginx", "chmod": "+w"},
+          {"file": "secure-monolith.yaml", "target": "/root", "chmod": "+w"},
           {"file": "tls/*.*", "target": "/root/configuration", "chmod": "+w"}
+
         ]
       }
     },
