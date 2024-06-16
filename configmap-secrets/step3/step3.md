@@ -21,13 +21,13 @@ kubectl apply -f secure-monolith.yaml
 ## 3/ Exposer le pod en local
 ```
 # Exposer le port en local avec la commande port-forward
-kubectl port-forward secure-monolith 10443:443
+kubectl port-forward secure-monolith 10443:443 &
 ```
 
 ## 4/ Test l'accès via curl
 ```
 # Faites une requête avec curl
-https://127.0.0.1:10443
+curl https://127.0.0.1:10443
 
 # Essayer la même chose en fournissant la CA.
 curl --cacert configuration/tls/ca.pem https://127.0.0.1:10443
