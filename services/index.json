@@ -1,0 +1,37 @@
+{
+    "title": "Les services",
+    "description": "Comment exposer des ressources",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Créer un service",
+          "text": "step1/step1.md",
+          "verify": "step1/verify.sh"
+        },
+        {
+          "title": "Comprendre les services",
+          "text": "step2/step2.md",
+          "verify": "step2/verify.sh"
+        },
+        {
+          "title": "Injecter des configurations",
+        "text": "step3/step3.md",
+        "verify": "step3/verify.sh"
+      }
+      ],
+      "assets": {
+        "host01": [
+          {"file": "proxy.conf", "target": "/root/configuration/nginx", "chmod": "+w"},
+          {"file": "secure-monolith.yaml", "target": "/root", "chmod": "+w"},
+          {"file": "tls/*.*", "target": "/root/configuration", "chmod": "+w"}
+
+        ]
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
