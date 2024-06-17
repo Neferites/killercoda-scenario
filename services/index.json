@@ -3,7 +3,8 @@
     "description": "Comment exposer des ressources",
     "details": {
       "intro": {
-        "text": "intro.md"
+        "text": "intro.md",
+        "background": "background.sh"
       },
       "steps": [
         {
@@ -24,10 +25,8 @@
       ],
       "assets": {
         "host01": [
-          {"file": "proxy.conf", "target": "/root/configuration/nginx", "chmod": "+w"},
           {"file": "monolith.yaml", "target": "/root/service", "chmod": "+w"},
-          {"file": "tls/*.*", "target": "/root/configuration", "chmod": "+w"}
-
+          {"file": "*-monolith.yaml", "target": "/root/pods","chmod":"+w"}
         ]
       }
     },
