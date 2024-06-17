@@ -13,7 +13,7 @@ cat service/monolith.yaml
 kubectl apply -f service/monolith.yaml
 ```
 
-## Question ?
+## Questions ?
 Que signifie le bloc suivant :
 ```
   ports:
@@ -21,3 +21,6 @@ Que signifie le bloc suivant :
       port: 443
       targetPort: 443
 ```
+
+Combien de pods sont lancés dans le namespace default ?
+> ecrire le résultat dans le fichier /tmp/svc.res avec la comme `echo <Mon chiffre> > /tmp/svc.res`
