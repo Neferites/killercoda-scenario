@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grep '192.168.0.8' /tmp/res-step2
+k get endpoints monolith -o jsonpath='{.subsets[0].addresses[0].ip}' | grep 192
