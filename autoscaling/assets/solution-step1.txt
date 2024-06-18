@@ -1,0 +1,14 @@
+Verifier l'état du déploiement:
+
+  kubectl get deploy
+
+ubuntu $ kubectl get deploy
+NAME          READY   UP-TO-DATE   AVAILABLE   AGE
+hpa-example   1/1     1            1           13m
+
+Le status nombre de pod pour le déploiement est 1.
+
+Pour afficher l'état de l'objet hpa et enregistrer le résultat:
+
+  echo 'kubectl get hpa' > /tmp/res-step1
+  

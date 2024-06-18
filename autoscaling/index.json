@@ -1,0 +1,41 @@
+{
+    "title": "Autoscaling",
+    "description": "Mise à l'échelle automatique",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "background.sh",
+        "foreground": "foreground.sh"
+      },
+      "steps": [
+        {
+          "title": "Créer un déploiement",
+          "text": "step1/step1.md",
+          "verify": "step1/verify.sh"
+        },
+        {
+          "title": "Charger le système",
+          "text": "step2/step2.md"
+        },
+        {
+          "title": "Vérifier l'état",
+          "text": "step3/step3.md",
+          "verify": "step3/verify.sh"
+        },
+        {
+          "title": "Downscale",
+          "text": "step4/step4.md",
+          "verify": "step4/verify.sh"
+        }
+      ],
+      "assets": {
+        "host01": [
+          {"file": "deployments/*", "target": "/root", "chmod": "+w"},
+          {"file": "solution*", "target": "/var/killercoda/solution","chmod":"+w"}
+        ]
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
