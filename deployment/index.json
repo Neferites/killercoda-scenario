@@ -16,6 +16,11 @@
           "title": "Corriger un déploiement",
           "text": "step2/step2.md",
           "verify": "step2/verify.sh"
+        },
+        {
+          "title": "Corriger un déploiement",
+          "text": "step3/step3.md",
+          "verify": "step3/verify.sh"
         }
       ],
       "assets": {
