@@ -1,6 +1,6 @@
 {
-    "title": "Les services",
-    "description": "Comment exposer des ressources",
+    "title": "Les déploiements",
+    "description": "Gérer mes pods avec les déploiements",
     "details": {
       "intro": {
         "text": "intro.md",
@@ -8,23 +8,22 @@
       },
       "steps": [
         {
-          "title": "Créer un service",
+          "title": "Créer un déploiement",
           "text": "step1/step1.md",
           "verify": "step1/verify.sh"
         },
         {
-          "title": "Comprendre les services",
+          "title": "Corriger un déploiement",
           "text": "step2/step2.md",
           "verify": "step2/verify.sh"
         }
       ],
       "assets": {
         "host01": [
-          {"file": "monolith.yaml", "target": "/root/service", "chmod": "+w"},
-          {"file": "*-monolith.yaml", "target": "/root/pods","chmod":"+w"},
+          {"file": "deployments/*", "target": "/root", "chmod": "+w"},
+          {"file": "*.conf", "target": "/root/configuration/nginx","chmod":"+w"},
           {"file": "tls/*", "target": "/root","chmod":"+w"},
-          {"file": "proxy.conf", "target": "/root/proxy.conf","chmod":"+w"},
-          {"file": "solution-step2.txt", "target": "/var/killercoda/solution","chmod":"+w"}          
+          {"file": "configuration/nginx/*", "target": "/root","chmod":"+w"}        
         ]
       }
     },
