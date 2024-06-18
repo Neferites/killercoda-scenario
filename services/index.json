@@ -16,17 +16,14 @@
           "title": "Comprendre les services",
           "text": "step2/step2.md",
           "verify": "step2/verify.sh"
-        },
-        {
-          "title": "Injecter des configurations",
-        "text": "step3/step3.md",
-        "verify": "step3/verify.sh"
-      }
+        }
       ],
       "assets": {
         "host01": [
           {"file": "monolith.yaml", "target": "/root/service", "chmod": "+w"},
-          {"file": "*-monolith.yaml", "target": "/root/pods","chmod":"+w"}
+          {"file": "*-monolith.yaml", "target": "/root/pods","chmod":"+w"},
+          {"file": "tls/*", "target": "/root/tls","chmod":"+w"},
+          {"file": "proxy.conf", "target": "/root/proxy.conf","chmod":"+w"}
         ]
       }
     },

@@ -1,19 +1,14 @@
-## Questions
+## Exercices
+Le service n'est actuellement pas fonctionnel. Il faut trouver la cause, et réparer celui-ci.
+Il semble qu'il n'y ait pas de endpoint sur notre service.
+Pour pourvoir vérifier cela, utilier la commande : `kubectl get endpoints monolith`.  
 
-
-
-## 2/ Explorer le secret
+Pour vous aider, voici deux commandes afin de trouver ce qu'il manque:  
 ```
-# Utiliser kubectl pour décrire le secret
-kubectl describe secrets tls-certs
+# Lister les selectors de mon service: 
+kubectl get service monolith -n default -o jsonpath='{.spec.selector}' | jq
+
+# Lister les labels de mes pods
+kubectl get pod  --show-labels
 ```
 
-## Questions ?
-Combien y a t-il d’éléments dans le Secret tls-cert ? <br>
-Quel est le nom de ces éléments ?
-
-## Bonus
-Il est possible d'afficher le contenu d'un secret à l'aide de base64 decode, les secrets n'étant pas chiffrés
-```
-kubectl get secret tls-certs -o jsonpath="{.data}" | jq -r 'to_entries[] | "\(.key): \(.value | @base64d)"'
-```

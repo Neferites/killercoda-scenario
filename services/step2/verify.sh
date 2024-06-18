@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kubectl get secrets tls-certs -n default
+kubectl get endpoints monolith | grep -v none
