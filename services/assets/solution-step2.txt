@@ -1,0 +1,22 @@
+En regardant les selector de mon service : 
+kubectl get service monolith -n default -o jsonpath='{.spec.selector}' | jq
+{
+  "app": "monolith",
+  "secure": "enabled"
+}
+
+Il faut qu'un pod ait les labels app: monolith et secure: enabled pour pouvoir être lié au service.
+
+En listant tous nos pods, on voit bien qu'il n'y a pas de pod ayant le label secure: enabled.
+kubectl get pod  --show-labels
+NAME               READY   STATUS    RESTARTS   AGE     LABELS
+healthy-monolith   1/1     Running   0          3m23s   app=monolith
+monolith           1/1     Running   0          3m23s   app=monolith
+secure-monolith    2/2     Running   0          3m22s   app=monolith
+
+On rajoute le label avec la commande:
+kubectl label pod secure-monolith secure=enabled
+
+Notre service possède maintenant un endpoint
+kubectl get endpoints monolith -o jsonpath='{.subsets[0].addresses[0].ip}'
+192.168.0.7
