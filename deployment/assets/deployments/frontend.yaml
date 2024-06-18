@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:<changeme> #mettre: nginx:1.9.14
+          image: nginx:<changemeto-1.9.14> #mettre: nginx:1.9.14
           lifecycle:
             preStop:
               exec:

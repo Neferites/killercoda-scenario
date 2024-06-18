@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grep "crash" /tmp/res-step1
+grep -i "InvalidImageName\|Invalid" /tmp/res-step1

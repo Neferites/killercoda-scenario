@@ -27,5 +27,7 @@ kubectl apply -f deployments/service-frontend.yaml
 ```
 
 # Question ?
-Le déploiement du frontend est dans un status un peu spécial.
+Le pod du frontend est dans un status un peu spécial.  
 Ecrire dans le fichier /tmp/res-step1 le nom de cet état.
+
+> vous pouvez utiliser la commande echo '<status>' > /tmp/res-step1

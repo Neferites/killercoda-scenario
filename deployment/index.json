@@ -23,7 +23,8 @@
           {"file": "deployments/*", "target": "/root", "chmod": "+w"},
           {"file": "*.conf", "target": "/root/configuration/nginx","chmod":"+w"},
           {"file": "tls/*", "target": "/root","chmod":"+w"},
-          {"file": "configuration/nginx/*", "target": "/root","chmod":"+w"}        
+          {"file": "configuration/nginx/*", "target": "/root","chmod":"+w"},
+          {"file": "solution*", "target": "/var/killercoda/solution","chmod":"+w"}
         ]
       }
     },

@@ -1,0 +1,10 @@
+Verifier l'état du pod avec la commande kubectl get pod
+kubectl get pod
+NAME                       READY   STATUS             RESTARTS   AGE
+auth-57cdcfb7cd-vbk4f      1/1     Running            0          104s
+frontend-7dff8b799-5qk4g   0/1     InvalidImageName   0          85s
+hello-5b56d4fc55-64t5w     1/1     Running            0          94s
+
+Le status du pod frontend est InvalidImageName.
+
+echo 'InvalidImageName' > /tmp/res-step1
