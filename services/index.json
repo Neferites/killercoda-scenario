@@ -22,7 +22,7 @@
         "host01": [
           {"file": "monolith.yaml", "target": "/root/service", "chmod": "+w"},
           {"file": "*-monolith.yaml", "target": "/root/pods","chmod":"+w"},
-          {"file": "tls/*", "target": "/root/tls","chmod":"+w"},
+          {"file": "tls/*", "target": "/root","chmod":"+w"},
           {"file": "proxy.conf", "target": "/root/proxy.conf","chmod":"+w"}
         ]
       }
