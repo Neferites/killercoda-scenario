@@ -1,0 +1,4 @@
+Retrouver le mot de passe:
+  
+  kubectl get secret mysql -o jsonpath='{.data.password}' | base64 -d
+

@@ -1,0 +1,40 @@
+{
+    "title": "Volume",
+    "description": "Gérer les données dans Kubernetes",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "background.sh",
+        "foreground": "foreground.sh"
+      },
+      "steps": [
+        {
+          "title": "Créer un secret pour la base de données",
+          "text": "step1/step1.md",
+          "verify": "step1/verify.sh"
+        },
+        {
+          "title": "Déployer un Wordpress complet",
+          "text": "step2/step2.md",
+          "verify": "step2/verify.sh"
+        },
+        {
+          "title": "Détruire et relancer des pods",
+          "text": "step3/step3.md"
+        },
+        {
+          "title": "Nettoyage",
+          "text": "step4/step4.md",
+          "verify": "step4/verify.sh"
+        }
+      ],
+      "assets": {
+        "host01": [
+          {"file": "volume/*", "target": "/root", "chmod": "+w"}
+        ]
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
