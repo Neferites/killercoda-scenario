@@ -9,4 +9,4 @@ kubectl delete pods -l="app=wordpress"
 ```{{exec}}
 
 ### Question ?
-Que se passe-t-il ? (un peu de patience quand même ;) )
+Que se passe-t-il ? (indice: regardez l'état des pods et en particulier depuis combien de temps ils tournent).
