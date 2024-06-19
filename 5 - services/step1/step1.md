@@ -5,13 +5,13 @@
 ```
 # Afficher le contenu du fichier
 cat service/monolith.yaml
-```
+```{{exec}}
 
 ## 2/ Créer le service à partir du fichier
 ```
 # Utiliser kubectl pour créer le service à partir du fichier
 kubectl apply -f service/monolith.yaml
-```
+```{{exec}}
 
 ## Questions ?
 Que signifie le bloc suivant :

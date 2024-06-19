@@ -5,13 +5,13 @@
 ```
 # Afficher le contenu du fichier
 cat configuration/nginx/proxy.conf
-```
+```{{exec}}
 
 ## 2/ Créer une configmap à partir du fichier
 ```
 # Utiliser kubectl pour créer la configmap à partir du fichier
 kubectl create configmap nginx-proxy-conf --from-file=configuration/nginx/proxy.conf
-```
+```{{exec}}
 
 ## Questions ?
 Combien y a t-il d’éléments dans la configmap nginx-proxy-conf ?

@@ -5,10 +5,10 @@
 ```
 # Afficher le contenu du fichier
 cat healthy-monolith.yaml
-```
+```{{exec}}
 
 ## 2/ Créer le pod
 ```
 # Utiliser kubectl pour créer le pod à partir du fichier
 k apply -f healthy-monolith.yaml
-```
+```{{exec}}

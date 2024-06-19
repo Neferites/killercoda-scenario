@@ -6,7 +6,7 @@ Dans un premier temps, avant de déployer le pod secure-monolith, nous allons es
 ```
 # Afficher le contenu du fichier.
 cat secure-monolith.yaml
-```
+```{{exec}}
 
 ## Questions ?
 Comment le secret est injecté dans le pod ? <br>
@@ -16,19 +16,21 @@ Comment le configmap est injecté dans le pod ?
 ```
 # Utiliser kubectl pour créer le pod secure-monolith
 kubectl apply -f secure-monolith.yaml
-```
+```{{exec}}
 
 ## 3/ Exposer le pod en local
 ```
 # Exposer le port en local avec la commande port-forward
 kubectl port-forward secure-monolith 10443:443 &
-```
+```{{exec}}
 
 ## 4/ Test l'accès via curl
+Faites une requête avec curl
 ```
-# Faites une requête avec curl
 curl https://127.0.0.1:10443
+```{{exec}}
 
-# Essayer la même chose en fournissant la CA.
-curl --cacert configuration/tls/ca.pem https://127.0.0.1:10443
+Essayer la même chose en fournissant la CA.
 ```
+curl --cacert configuration/tls/ca.pem https://127.0.0.1:10443
+```{{exec}}

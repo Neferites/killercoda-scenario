@@ -4,7 +4,7 @@ Les informations sur la readiness/liveness ne sont pas visibles de manière triv
 Après avoir fait un describe : 
 ```
 kubectl describe pod healthy-monolith
-```
+```{{exec}}
 
 Comment est configurée la sonde readiness ?
 Comment est configurée la sonde liveness
@@ -20,17 +20,17 @@ kubectl port-forward healthy-monolith 10081:81 &
 
 # Passage de la readiness à failed
 curl http://127.0.0.1:10081/readiness/status
-```
+```{{exec}}
 
 Vérfier l'état du pod avec la commande describe : 
 ```
 kubectl describe pods healthy-monolith
-```
+```{{exec}}
 
 ## 5/ Tester la liveness
 Nous allons faire pareil avec la liveness
 ```
 curl http://127.0.0.1:10081/healthz/status
-```
+```{{exec}}
 
 Que se passe t'il quand la liveness est KO ? 

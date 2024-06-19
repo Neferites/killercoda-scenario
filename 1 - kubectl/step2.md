@@ -2,12 +2,16 @@
 Nous allons créer un namespace, et ensuite nous placer dedans
 ```
 kubectl create ns sfeir-school
+```{{exec}}
 
-## Vérifier la présence du namespace
-kubectl get ns
-
-## Se déplacer dans le namespace
-kubectl config set-context --current --namespace=sfeir-school
+Vérifier la présence du namespace
 ```
+kubectl get ns
+```{{exec}}
+
+Se déplacer dans le namespace
+```
+kubectl config set-context --current --namespace=sfeir-school
+```{{exec}}
 
 Et comment puis je savoir dans quel namespace je me trouve ?

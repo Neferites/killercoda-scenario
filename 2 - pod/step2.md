@@ -4,20 +4,20 @@ Avec l'aide de kubectl, nous allons retrouver des informations sur le pod préc�
 ### Quelle est l'ip du pod ?
 ```
 kubectl get pod -o wide
-```
+```{{exec}}
 
 ### Sur quel node s'exectute le pod ?
 ```
 kubectl get pod -o wide
-```
+```{{exec}}
 
 ### Quelle est l'image qui est lancé à l'intérieur du pod ?
 ```
 kubectl describe pod monolith
-```
+```{{exec}}
 
 ### Dans quel namespace est le pod ?
 ```
 kubectl get pod -A 
-```
+```{{exec}}
 
