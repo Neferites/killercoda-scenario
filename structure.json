@@ -1,0 +1,12 @@
+{
+    "items": [
+      { "path": "1-kubectl" },
+      { "path": "2-pod" },
+      { "path": "3-readiness" },
+      { "path": "4-configmap-secrets" },
+      { "path": "5-services" },
+      { "path": "6-deployment" },
+      { "path": "7-autoscaling" },
+      { "path": "8-volumes" }
+    ]
+  }
