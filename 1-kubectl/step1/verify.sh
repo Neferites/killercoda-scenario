@@ -1,4 +1,4 @@
 #!/bin/bash
-if [[ "${GOD}" != "true" ]]; then
+if [[ -e "/tmp/god" ]]; then
   grep -i "kubernetes-admin" /tmp/res-step1
 fi
