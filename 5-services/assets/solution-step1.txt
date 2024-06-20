@@ -1,0 +1,10 @@
+Pour connaitre le nombre de pods dans le namespace
+
+> k get pods
+NAME               READY   STATUS    RESTARTS   AGE
+healthy-monolith   1/1     Running   0          6m38s
+monolith           1/1     Running   0          6m38s
+secure-monolith    2/2     Running   0          6m36s
+
+Il y a 4 conteneurs répartis dans 3 pods.
+

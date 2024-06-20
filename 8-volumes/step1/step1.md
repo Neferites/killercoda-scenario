@@ -6,10 +6,8 @@ kubectl create secret generic mysql --from-literal=password=$(openssl rand -hex 
 ```{{exec}}
 
 ### Question ?
-
-- Quelle est le mot de passe généré ?
-
-Indices pour le retrouver:
+Quel est le mot de passe généré ?
+> Indices pour le retrouver:
 
 1. Afficher le secret en format YAML
 
@@ -17,7 +15,7 @@ Indices pour le retrouver:
 kubectl get secret mysql -o yaml
 ```{{exec}}
 
-2. Dans ce yamml, repérer le chemin de l'élément qui contient le mot de passe, et l'extraire avec le paramètre _jsonpath_ de kubectl
+2. Dans ce yaml, repérer le chemin de l'élément qui contient le mot de passe et l'extraire avec le paramètre `jsonpath` de kubectl
 
 ```
 kubectl get secret mysql -o jsonpath='{.mon.chemin.ici}'

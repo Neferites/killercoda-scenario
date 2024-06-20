@@ -1,4 +1,4 @@
-# Les deployements
+# Les déploiements
 
 Un déploiement Kubernetes est une abstraction qui gère un ensemble de répliques d'une application conteneurisée. Il définit l'état souhaité pour ces applications et Kubernetes s'assure que cet état est maintenu. 
 

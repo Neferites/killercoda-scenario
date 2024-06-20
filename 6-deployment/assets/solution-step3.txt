@@ -1,0 +1,3 @@
+Le nombre de réplicas d'un déploiement peut être modifié à l'aide de la commande kubectl ou bien en changeant la ligne replicas du fichier YAML.
+
+kubectl scale deployment hello --replicas=3

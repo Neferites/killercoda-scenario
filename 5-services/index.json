@@ -24,7 +24,7 @@
           {"file": "*-monolith.yaml", "target": "/root/pods","chmod":"+w"},
           {"file": "tls/*", "target": "/root","chmod":"+w"},
           {"file": "proxy.conf", "target": "/root/proxy.conf","chmod":"+w"},
-          {"file": "solution-step2.txt", "target": "/var/killercoda/solution","chmod":"+w"}          
+          {"file": "solution*.txt", "target": "/var/killercoda/solution","chmod":"+w"}          
         ]
       }
     },

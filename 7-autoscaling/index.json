@@ -30,10 +30,14 @@
       ],
       "assets": {
         "host01": [
-          {"file": "deployments/*", "target": "/root", "chmod": "+w"},
-          {"file": "solution*", "target": "/var/killercoda/solution","chmod":"+w"}
+          {"file": "init.sh", "target": "/ks", "chmod": "+x"},
+          {"file": "k8s.sh", "target": "/ks", "chmod": "+x"},
+          {"file": "wait-init.sh", "target": "/ks", "chmod": "+x"}
         ]
       }
+    },
+    "finish": {
+      "text": "finish.md"
     },
     "backend": {
       "imageid": "ubuntu"

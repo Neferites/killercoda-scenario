@@ -16,5 +16,5 @@ k apply -f monolith.yaml
 
 ## Question ?
 Quelle est le nom de l'image qui sera lancée dans le pod ?
-Ecrire dans le fichier `/tmp/res-step1` le nom du context.  
-> vous pouvez utiliser la commande `echo '<nom du context>' > /tmp/res-step1`
+Ecrire dans le fichier `/tmp/res-step1` le nom de l'image.  
+> vous pouvez utiliser la commande `echo '<nom de l'image>' > /tmp/res-step1`

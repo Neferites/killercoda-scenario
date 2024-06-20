@@ -4,10 +4,11 @@ Il est possible de créer un tunnel entre un cluster kubernetes et sa machine lo
 KillerCoda utilise un principe d'affichage au travers d'une page web, mais le principe reste le même.
 
 ### Créer le port forward
+Le `&` à la fin de la commande permet de lancer le forward en arrière plan.
 ```
-# Le `&` à la fin de la commande permet de lancer le forward en arrière plan.
 kubectl port-forward monolith 10080:80 &
 ```{{exec}}
+Une fois le port forward effectué, il faut faire Ctrl + C afin de reprendre la main.
 
 Tester un curl sur le pod
 ```
@@ -28,7 +29,7 @@ curl -u user http://127.0.0.1:10080/login
 Utiliser le token récupéré précédement
 ```
 curl -H "Authorization: Bearer <token>" http://127.0.0.1:10080/secure
-```
+```{{copy}}
 
 ### Regarder les logs du pod
 La commande `kubectl logs <mon_pod>` permet de voir les logs du container tournant dans le pod. Les logs sont ceux depuis le dernier démarrage du pod. Si un restart a eu lieu, les précédents ne sont pas affichés.
