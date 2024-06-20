@@ -1,0 +1,18 @@
+Pour lister les élements d'une configmap, il est possible d'utiliser
+k get cm nginx-proxy-conf -o yaml
+
+ou encore
+k describe cm nginx-proxy-conf
+Name:         nginx-proxy-conf
+Namespace:    default
+Labels:       <none>
+Annotations:  <none>
+
+Data
+====
+proxy.conf:
+----
+server { ...
+
+
+On voit bien que la configmap contient 1 element nommé proxy.conf

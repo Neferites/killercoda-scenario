@@ -1,0 +1,18 @@
+Pour lister les élements d'un secret
+
+k describe secrets tls-certs 
+Name:         tls-certs
+Namespace:    default
+Labels:       <none>
+Annotations:  <none>
+
+Type:  Opaque
+
+Data
+====
+key.pem:     1703 bytes
+ca-key.pem:  2483 bytes
+ca.pem:      1711 bytes
+cert.pem:    1544 bytes
+
+4 élements.

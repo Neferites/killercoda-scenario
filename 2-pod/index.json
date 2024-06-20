@@ -3,7 +3,8 @@
     "description": "Mes premiers pas avec un Pod",
     "details": {
       "intro": {
-        "text": "intro.md"
+        "text": "intro.md",
+        "background": "background.sh"
       },
       "steps": [
         {
@@ -22,7 +23,8 @@
       ],
       "assets": {
         "host01": [
-          {"file": "monolith.yaml", "target": "/root", "chmod": "+w"}
+          {"file": "monolith.yaml", "target": "/root", "chmod": "+w"},
+          {"file": "solution*", "target": "/var/killercoda/solution","chmod":"+w"}
         ]
       }
     },

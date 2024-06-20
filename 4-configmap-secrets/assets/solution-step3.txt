@@ -1,0 +1,16 @@
+En regardant le contenu du fichier secure-monolith.yaml, on voit qu'il y a une configmap et un secret de monté dans le pod.
+
+cat secure-monolith.yaml 
+apiVersion: v1
+kind: Pod
+...
+  volumes:
+    - name: "tls-certs"
+      secret:
+        secretName: "tls-certs"
+    - name: "nginx-proxy-conf"
+      configMap:
+        name: "nginx-proxy-conf"
+        items:
+          - key: "proxy.conf"
+            path: "proxy.conf"

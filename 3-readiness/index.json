@@ -3,7 +3,8 @@
     "description": "Pour un peu plus de disponibilité",
     "details": {
       "intro": {
-        "text": "intro.md"
+        "text": "intro.md",
+        "background": "background.sh"
       },
       "steps": [
         {

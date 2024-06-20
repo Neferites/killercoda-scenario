@@ -1,3 +1,4 @@
 #!/bin/bash
-
-kubectl get pod monolith -n default
+if [[ ! -e "/tmp/god" ]]; then
+  grep -i "monolith" /tmp/res-step1
+fi

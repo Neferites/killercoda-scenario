@@ -17,10 +17,10 @@ curl http://127.0.0.1:10080
 Essayer le endpoint sécurisé, il est normalement protégé par un token
 ```
 curl http://127.0.0.1:10080/secure
-# Le mot de passe est : "password"
 ```{{exec}}
 
 S'authentifier en ligne de commande et récupérer le token
+> Le mot de passe est : 'password'
 ```
 curl -u user http://127.0.0.1:10080/login
 ```{{exec}}
