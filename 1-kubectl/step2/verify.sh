@@ -1,6 +1,6 @@
 #!/bin/bash
-[ if ${GOD:-} != "true"]; then
+if [[ "${GOD}" != "true" ]]; then
   grep -i "k config get-contexts\|kubectl config get-contexts\|k get config view\| kubectl get config view" /tmp/res-step2
 else
- return 0
+ exit 0
 fi
