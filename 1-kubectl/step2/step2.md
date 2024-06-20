@@ -14,4 +14,7 @@ Se déplacer dans le namespace
 kubectl config set-context --current --namespace=sfeir-school
 ```{{exec}}
 
-Et comment puis je savoir dans quel namespace je me trouve ?
+### Question ?
+Quelle commande permet de savoir dans quel namespace je me trouve ?
+Ecrire dans le fichier `/tmp/res-step2` le nom du context.  
+> vous pouvez utiliser la commande `echo '<nom du context>' > /tmp/res-step2`
