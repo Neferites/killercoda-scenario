@@ -31,13 +31,15 @@
           {"file": "init.sh", "target": "/ks", "chmod": "+x"},
           {"file": "k8s.sh", "target": "/ks", "chmod": "+x"},
           {"file": "wait-init.sh", "target": "/ks", "chmod": "+x"},
+          {"file": "deployments/*", "target": "/root", "chmod": "+x"},
           {"file": "solution*", "target": "/var/killercoda/solution","chmod":"+w"}
         ]
+      },
+      "finish": {
+        "text": "finish .md"
       }
     },
-    "finish": {
-      "text": "finish.md"
-    },
+
     "backend": {
       "imageid": "ubuntu"
     }

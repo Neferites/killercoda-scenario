@@ -2,7 +2,7 @@
 Création du déploiement
 ```
 kubectl apply -f deployments/hpa-example.yaml
-```
+```{{exec}}
 
 Création du service avec la méthode impérative
 ```
