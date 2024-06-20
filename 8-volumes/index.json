@@ -15,8 +15,7 @@
         },
         {
           "title": "Déployer un Wordpress complet",
-          "text": "step2/step2.md",
-          "verify": "step2/verify.sh"
+          "text": "step2/step2.md"
         },
         {
           "title": "Détruire et relancer des pods",
@@ -24,14 +23,16 @@
         },
         {
           "title": "Nettoyage",
-          "text": "step4/step4.md",
-          "verify": "step4/verify.sh"
+          "text": "step4/step4.md"
         }
       ],
       "assets": {
         "host01": [
           {"file": "volume/*", "target": "/root", "chmod": "+w"}
         ]
+      },
+      "finish": {
+        "text": "finish.md"
       }
     },
     "backend": {

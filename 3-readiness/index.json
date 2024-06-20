@@ -21,6 +21,9 @@
         "host01": [
           {"file": "healthy-monolith.yaml", "target": "/root", "chmod": "+w"}
         ]
+      },
+      "finish": {
+        "text": "finish.md"
       }
     },
     "backend": {

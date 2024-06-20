@@ -30,6 +30,9 @@
           {"file": "tls/*.*", "target": "/root/configuration", "chmod": "+w"},
           {"file": "solution*", "target": "/var/killercoda/solution","chmod":"+w"}
         ]
+      },
+      "finish": {
+        "text": "finish.md"
       }
     },
     "backend": {

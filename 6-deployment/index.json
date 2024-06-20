@@ -31,6 +31,9 @@
           {"file": "configuration/nginx/*", "target": "/root","chmod":"+w"},
           {"file": "solution*", "target": "/var/killercoda/solution","chmod":"+w"}
         ]
+      },
+      "finish": {
+        "text": "finish.md"
       }
     },
     "backend": {
