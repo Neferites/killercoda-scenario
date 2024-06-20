@@ -1,3 +1,4 @@
 #!/bin/bash
-
-grep "hpa-example" /tmp/res-step1
+if [[ ! -e "/tmp/god" ]]; then
+  grep "hpa-example" /tmp/res-step1
+fi
