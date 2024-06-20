@@ -1,0 +1,11 @@
+Un contexte est affiché avec la commande kubectl config get-contexts
+
+controlplane $ kubectl config get-contexts
+CURRENT   NAME                          CLUSTER      AUTHINFO           NAMESPACE
+*         kubernetes-admin@kubernetes   kubernetes   kubernetes-admin   sfeir-school
+
+Le nom est donc kubernetes-admin@kubernetes
+
+Une autre méthode plus rapide : 
+controlplane $ kubectl config current-context
+kubernetes-admin@kubernetes
