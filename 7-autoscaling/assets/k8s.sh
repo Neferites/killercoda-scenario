@@ -6,7 +6,7 @@ rm $0
 
 curl -sfL https://get.k3s.io | sh -
 
-while [ ! -f /root/.kube/config ]
+while [ ! -f /etc/rancher/k3s/k3s.yaml ]
 do
   sleep 1
 done
