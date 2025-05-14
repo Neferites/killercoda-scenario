@@ -18,6 +18,8 @@ spec:
         - image: wordpress
           name: wordpress
           env:
+            - name: WORDPRESS_DB_NAME
+              value: wordpress
             - name: WORDPRESS_DB_USER
               value: root
             - name: WORDPRESS_DB_HOST
