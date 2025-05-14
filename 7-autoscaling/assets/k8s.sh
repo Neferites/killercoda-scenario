@@ -5,6 +5,7 @@
 rm $0
 
 curl -sfL https://get.k3s.io | sh -
+KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 
 while [ ! -f "$KUBECONFIG" ]; do
     sleep 1
